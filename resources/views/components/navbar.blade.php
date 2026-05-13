@@ -32,7 +32,8 @@
                         <a href="{{ route('visi-misi') }}" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary border-b border-gray-50">Visi & Misi</a>
                         <a href="{{ route('fasilitas') }}" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary border-b border-gray-50">Fasilitas</a>
 
-                        <a href="{{ route('struktur-organisasi') }}" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary">Struktur Organisasi</a>
+                        <a href="{{ route('struktur-organisasi') }}" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary border-b border-gray-50">Struktur Organisasi</a>
+                        <a href="{{ route('prestasi') }}" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary">Prestasi Murid</a>
                     </div>
                 </div>
 
@@ -79,6 +80,7 @@
                     <a href="{{ route('fasilitas') }}" class="block px-3 py-2 rounded-md text-sm text-gray-600 hover:text-primary hover:bg-gray-50">Fasilitas</a>
 
                     <a href="{{ route('struktur-organisasi') }}" class="block px-3 py-2 rounded-md text-sm text-gray-600 hover:text-primary hover:bg-gray-50">Struktur Organisasi</a>
+                    <a href="{{ route('prestasi') }}" class="block px-3 py-2 rounded-md text-sm text-gray-600 hover:text-primary hover:bg-gray-50">Prestasi Murid</a>
                 </div>
             </div>
 

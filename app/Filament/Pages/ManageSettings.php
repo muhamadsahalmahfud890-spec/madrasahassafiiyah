@@ -36,7 +36,7 @@ class ManageSettings extends Page implements HasForms
     public function form(Schema $schema): Schema
     {
         return $schema
-            ->schema([
+            ->components([
                 Section::make('Identitas Madrasah')
                     ->schema([
                         TextInput::make('nama_sekolah')

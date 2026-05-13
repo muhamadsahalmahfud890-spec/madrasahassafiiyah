@@ -33,7 +33,7 @@
             @php
                 $fasilitas = [
                     ['img' => 'https://i.top4top.io/p_3781kmoeq1.jpeg', 'title' => 'Ruang Kelas', 'desc' => 'Ruangan yang nyaman dengan pencahayaan yang optimal.'],
-                    ['img' => 'https://g.top4top.io/p_3784n4fwp1.jpeg', 'title' => 'Ruang Guru', 'desc' => ''],
+                    ['img' => 'https://h.top4top.io/p_3785kmh5r1.jpeg', 'title' => 'Ruang Guru', 'desc' => ''],
                 ];
             @endphp
 

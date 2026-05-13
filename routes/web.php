@@ -32,6 +32,9 @@ Route::get('/hasil-pmbm', [PmbmController::class, 'hasil'])->name('hasil-pmbm');
 Route::get('/kontak', [ContactController::class, 'index'])->name('kontak');
 Route::post('/kontak', [ContactController::class, 'send'])->name('contact.send');
 
+// Prestasi
+Route::get('/prestasi', [PostController::class, 'prestasi'])->name('prestasi');
+
 // Sitemap
 Route::get('/sitemap.xml', [SitemapController::class, 'index'])->name('sitemap');
 

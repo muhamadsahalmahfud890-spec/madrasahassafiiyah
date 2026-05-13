@@ -23,7 +23,7 @@
                 <div data-aos="fade-up" data-aos-delay="{{ ($idx % 3) * 100 }}">
                     <!-- Custom Prestasi Card -->
                     <article class="bg-white rounded-xl shadow-md hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 overflow-hidden flex flex-col h-full border border-yellow-100">
-                        <a href="{{ route('artikel.show', $post->slug) }}" class="block relative aspect-video overflow-hidden">
+                        <div class="block relative aspect-video overflow-hidden">
                             <img src="{{ $post->image ? asset('storage/' . $post->image) : 'https://picsum.photos/seed/'.$post->id.'/800/450' }}" 
                                  alt="{{ $post->title }}" loading="lazy" 
                                  class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
@@ -34,7 +34,7 @@
                                     <i class="fas fa-trophy mr-1"></i> Prestasi
                                 </span>
                             </div>
-                        </a>
+                        </div>
 
                         <div class="p-6 flex flex-col flex-grow">
                             <div class="flex items-center text-gray-500 text-xs mb-3">
@@ -42,21 +42,20 @@
                                 <span>{{ \Carbon\Carbon::parse($post->published_at)->translatedFormat('d M Y') }}</span>
                             </div>
 
-                            <a href="{{ route('artikel.show', $post->slug) }}" class="group block mb-3">
+                            <div class="group block mb-3">
                                 <h3 class="font-heading font-bold text-xl text-gray-900 group-hover:text-accent transition-colors line-clamp-2 leading-snug">
                                     {{ $post->title }}
                                 </h3>
-                            </a>
+                            </div>
 
                             <p class="text-gray-600 text-sm mb-6 line-clamp-3 flex-grow">
                                 {{ \Illuminate\Support\Str::limit($post->excerpt ?? strip_tags($post->content), 100) }}
                             </p>
 
                             <div class="mt-auto pt-4 border-t border-gray-100">
-                                <a href="{{ route('artikel.show', $post->slug) }}" class="inline-flex items-center text-sm font-semibold text-accent hover:text-yellow-700 transition-colors group">
-                                    Baca Selengkapnya
-                                    <i class="fas fa-arrow-right ml-2 text-xs transform group-hover:translate-x-1 transition-transform"></i>
-                                </a>
+                                <span class="inline-flex items-center text-sm font-semibold text-accent">
+                                    Detail Prestasi
+                                </span>
                             </div>
                         </div>
                     </article>
